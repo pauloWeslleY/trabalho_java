@@ -71,7 +71,7 @@ public class PedraPapelTesouraServer {
           }
 
           if (!isValidChoice(player1Choice)) {
-            player1Out.println("Escolha inválida. Tente novamente.");
+            player1Out.println("Escolha invalida. Tente novamente.");
             continue;
           }
 
@@ -85,18 +85,18 @@ public class PedraPapelTesouraServer {
 
             if (SAIR.equalsIgnoreCase(player2Choice)) {
               player1Out.println("O oponente saiu do jogo.");
-              player2Out.println("Você saiu do jogo.");
+              player2Out.println("Voce saiu do jogo.");
               break;
             }
 
             if (!isValidChoice(player2Choice)) {
-              player1Out.println("Escolha inválida do oponente. Tente novamente.");
-              player2Out.println("Escolha inválida. Tente novamente.");
+              player1Out.println("Escolha invalida do oponente. Tente novamente.");
+              player2Out.println("Escolha invalida. Tente novamente.");
               continue;
             }
 
             player1Out.println("Oponente escolheu: " + player2Choice);
-            player2Out.println("Você escolheu: " + player2Choice);
+            player2Out.println("Voce escolheu: " + player2Choice);
           }
 
           String result = determineWinner(player1Choice, player2Choice);
@@ -105,16 +105,16 @@ public class PedraPapelTesouraServer {
             case "Vitória":
               player1Wins++;
               player2Losses++;
-              player1Out.println("Você ganhou!");
+              player1Out.println("Voce ganhou!");
               if (player2Out != null)
-                player2Out.println("Você perdeu!");
+                player2Out.println("Voce perdeu!");
               break;
             case "Derrota":
               player1Losses++;
               player2Wins++;
-              player1Out.println("Você perdeu!");
+              player1Out.println("Voce perdeu!");
               if (player2Out != null)
-                player2Out.println("Você ganhou!");
+                player2Out.println("Voce ganhou!");
               break;
             case "Empate":
               player1Draws++;
@@ -160,7 +160,7 @@ public class PedraPapelTesouraServer {
         case "tesoura":
           return player2Choice.equalsIgnoreCase("Papel") ? "Vitória" : "Derrota";
         default:
-          return "Escolha inválida";
+          return "Escolha invalida";
       }
     }
 
