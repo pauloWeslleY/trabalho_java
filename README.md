@@ -6,6 +6,8 @@
 - Paulo Weslley de Lima Firmino - RA: 12523131310
 - Tarcisio Vinicius RA: 12524120367
 - João Gabriel Tomaz de Oliveira RA: 12523168979
+- Henri Tomy Kawahara RA: 12524120368
+- Lucas Henrique Klein Esteves RA: 12523141534
 
 <br><br>
 
